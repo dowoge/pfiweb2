@@ -1,0 +1,55 @@
+.title {
+    background-color: blue;
+    flex: 100%;
+    order: 1;
+}
+
+.text {
+    flex: 100%;
+    background-color: cyan;
+    order: 3;
+}
+
+.image {
+    flex: 100%;
+    background-color: green;
+    order: 2;
+}
+
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border:1px solid #ccc;
+}
+
+.large {
+    flex: 2;
+}
+
+@media screen and (max-width:836px) {
+    .col {
+        flex: 100%;
+    }
+
+    .text {
+        flex: 1;
+        order: 2;
+    }
+
+    .image {
+        flex: 1;
+        order: 3;
+    }
+}
+img{
+    width: 100%;
+}
